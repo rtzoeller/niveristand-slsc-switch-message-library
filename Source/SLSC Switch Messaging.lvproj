@@ -13,10 +13,6 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Includes" Type="Folder">
 			<Item Name="CDMessaging.lvlibp" Type="LVLibp" URL="../../Includes/CDMessaging.lvlibp">
-				<Item Name="Message Queue" Type="Folder">
-					<Item Name="Abstract Message Queue.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message Queue/Abstract Message Queue/Abstract Message Queue.lvclass"/>
-					<Item Name="Message Queue.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message Queue/Message Queue/Message Queue.lvclass"/>
-				</Item>
 				<Item Name="Consumer" Type="Folder">
 					<Item Name="Abstract Consumer.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Consumer/Abstract Consumer/Abstract Consumer.lvclass"/>
 				</Item>
@@ -25,6 +21,10 @@
 					<Item Name="Abstract Request Message.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message/Abstract Request Message/Abstract Request Message.lvclass"/>
 					<Item Name="Abstract Response Message.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message/Abstract Response Message/Abstract Response Message.lvclass"/>
 					<Item Name="Shutdown Message.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message/Shutdown Message/Shutdown Message.lvclass"/>
+				</Item>
+				<Item Name="Message Queue" Type="Folder">
+					<Item Name="Abstract Message Queue.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message Queue/Abstract Message Queue/Abstract Message Queue.lvclass"/>
+					<Item Name="Message Queue.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message Queue/Message Queue/Message Queue.lvclass"/>
 				</Item>
 				<Item Name="Parameters" Type="Folder">
 					<Item Name="Abstract Init Parameters.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Parameters/Abstract Init Parameters/Abstract Init Parameters.lvclass"/>
@@ -41,8 +41,8 @@
 					<Item Name="Abstract Switch Consumer.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Switch/Abstract Switch Consumer/Abstract Switch Consumer.lvclass"/>
 					<Item Name="Abstract Switch Init Parameters.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Switch/Abstract Switch Init Parameters/Abstract Switch Init Parameters.lvclass"/>
 				</Item>
-				<Item Name="Initialize Request Response Queues.vi" Type="VI" URL="../../Includes/CDMessaging.lvlibp/Initialize Request Response Queues.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../Includes/CDMessaging.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Initialize Request Response Queues.vi" Type="VI" URL="../../Includes/CDMessaging.lvlibp/Initialize Request Response Queues.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Tests" Type="Folder">
@@ -418,6 +418,38 @@
 				<Item Name="Waveform Subtype Enum__ogtk__jki_vi_tester.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Waveform Subtype Enum__ogtk__jki_vi_tester.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="CDMessaging.lvlibp" Type="LVLibp" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp">
+				<Item Name="Message Queue" Type="Folder">
+					<Item Name="Abstract Message Queue.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message Queue/Abstract Message Queue/Abstract Message Queue.lvclass"/>
+					<Item Name="Message Queue.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message Queue/Message Queue/Message Queue.lvclass"/>
+				</Item>
+				<Item Name="Consumer" Type="Folder">
+					<Item Name="Abstract Consumer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Consumer/Abstract Consumer/Abstract Consumer.lvclass"/>
+				</Item>
+				<Item Name="Message" Type="Folder">
+					<Item Name="Abstract Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Message/Abstract Message.lvclass"/>
+					<Item Name="Abstract Request Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Request Message/Abstract Request Message.lvclass"/>
+					<Item Name="Abstract Response Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Response Message/Abstract Response Message.lvclass"/>
+					<Item Name="Shutdown Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Shutdown Message/Shutdown Message.lvclass"/>
+				</Item>
+				<Item Name="Parameters" Type="Folder">
+					<Item Name="Abstract Init Parameters.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Parameters/Abstract Init Parameters/Abstract Init Parameters.lvclass"/>
+				</Item>
+				<Item Name="Producer" Type="Folder">
+					<Item Name="Abstract Producer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Producer/Abstract Producer/Abstract Producer.lvclass"/>
+				</Item>
+				<Item Name="Switch" Type="Folder">
+					<Item Name="Messages" Type="Folder">
+						<Item Name="Switch Connect Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Connect Message/Switch Connect Message.lvclass"/>
+						<Item Name="Switch Disconnect All Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Disconnect All Message/Switch Disconnect All Message.lvclass"/>
+						<Item Name="Switch Disconnect Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Disconnect Message/Switch Disconnect Message.lvclass"/>
+					</Item>
+					<Item Name="Abstract Switch Consumer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Abstract Switch Consumer/Abstract Switch Consumer.lvclass"/>
+					<Item Name="Abstract Switch Init Parameters.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Abstract Switch Init Parameters/Abstract Switch Init Parameters.lvclass"/>
+				</Item>
+				<Item Name="Initialize Request Response Queues.vi" Type="VI" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Initialize Request Response Queues.vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -453,7 +485,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8816746B-F6F1-4B7E-A4E7-4068085DEA1B}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SLSCSwitchMessaging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../Built/Windows/SLSCSwitchMessaging.lvlibp</Property>
@@ -535,10 +567,6 @@
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Includes" Type="Folder">
 			<Item Name="CDMessaging.lvlibp" Type="LVLibp" URL="../../Includes/CDMessaging.lvlibp">
-				<Item Name="Message Queue" Type="Folder">
-					<Item Name="Abstract Message Queue.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message Queue/Abstract Message Queue/Abstract Message Queue.lvclass"/>
-					<Item Name="Message Queue.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message Queue/Message Queue/Message Queue.lvclass"/>
-				</Item>
 				<Item Name="Consumer" Type="Folder">
 					<Item Name="Abstract Consumer.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Consumer/Abstract Consumer/Abstract Consumer.lvclass"/>
 				</Item>
@@ -547,6 +575,10 @@
 					<Item Name="Abstract Request Message.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message/Abstract Request Message/Abstract Request Message.lvclass"/>
 					<Item Name="Abstract Response Message.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message/Abstract Response Message/Abstract Response Message.lvclass"/>
 					<Item Name="Shutdown Message.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message/Shutdown Message/Shutdown Message.lvclass"/>
+				</Item>
+				<Item Name="Message Queue" Type="Folder">
+					<Item Name="Abstract Message Queue.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message Queue/Abstract Message Queue/Abstract Message Queue.lvclass"/>
+					<Item Name="Message Queue.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Message Queue/Message Queue/Message Queue.lvclass"/>
 				</Item>
 				<Item Name="Parameters" Type="Folder">
 					<Item Name="Abstract Init Parameters.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Parameters/Abstract Init Parameters/Abstract Init Parameters.lvclass"/>
@@ -563,8 +595,8 @@
 					<Item Name="Abstract Switch Consumer.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Switch/Abstract Switch Consumer/Abstract Switch Consumer.lvclass"/>
 					<Item Name="Abstract Switch Init Parameters.lvclass" Type="LVClass" URL="../../Includes/CDMessaging.lvlibp/Switch/Abstract Switch Init Parameters/Abstract Switch Init Parameters.lvclass"/>
 				</Item>
-				<Item Name="Initialize Request Response Queues.vi" Type="VI" URL="../../Includes/CDMessaging.lvlibp/Initialize Request Response Queues.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../Includes/CDMessaging.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Initialize Request Response Queues.vi" Type="VI" URL="../../Includes/CDMessaging.lvlibp/Initialize Request Response Queues.vi"/>
 			</Item>
 		</Item>
 		<Item Name="SLSC Switch Messaging.lvlib" Type="Library" URL="../SLSC Switch Messaging.lvlib"/>
@@ -572,6 +604,38 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="nislscslSession.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/SLSC_Switch/nislscslSession.ctl"/>
 				<Item Name="SLSC Switch.lvlib" Type="Library" URL="/&lt;vilib&gt;/SLSC_Switch/SLSC Switch.lvlib"/>
+			</Item>
+			<Item Name="CDMessaging.lvlibp" Type="LVLibp" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp">
+				<Item Name="Message Queue" Type="Folder">
+					<Item Name="Abstract Message Queue.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message Queue/Abstract Message Queue/Abstract Message Queue.lvclass"/>
+					<Item Name="Message Queue.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message Queue/Message Queue/Message Queue.lvclass"/>
+				</Item>
+				<Item Name="Consumer" Type="Folder">
+					<Item Name="Abstract Consumer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Consumer/Abstract Consumer/Abstract Consumer.lvclass"/>
+				</Item>
+				<Item Name="Message" Type="Folder">
+					<Item Name="Abstract Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Message/Abstract Message.lvclass"/>
+					<Item Name="Abstract Request Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Request Message/Abstract Request Message.lvclass"/>
+					<Item Name="Abstract Response Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Response Message/Abstract Response Message.lvclass"/>
+					<Item Name="Shutdown Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Shutdown Message/Shutdown Message.lvclass"/>
+				</Item>
+				<Item Name="Parameters" Type="Folder">
+					<Item Name="Abstract Init Parameters.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Parameters/Abstract Init Parameters/Abstract Init Parameters.lvclass"/>
+				</Item>
+				<Item Name="Producer" Type="Folder">
+					<Item Name="Abstract Producer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Producer/Abstract Producer/Abstract Producer.lvclass"/>
+				</Item>
+				<Item Name="Switch" Type="Folder">
+					<Item Name="Messages" Type="Folder">
+						<Item Name="Switch Connect Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Connect Message/Switch Connect Message.lvclass"/>
+						<Item Name="Switch Disconnect All Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Disconnect All Message/Switch Disconnect All Message.lvclass"/>
+						<Item Name="Switch Disconnect Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Disconnect Message/Switch Disconnect Message.lvclass"/>
+					</Item>
+					<Item Name="Abstract Switch Consumer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Abstract Switch Consumer/Abstract Switch Consumer.lvclass"/>
+					<Item Name="Abstract Switch Init Parameters.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Abstract Switch Init Parameters/Abstract Switch Init Parameters.lvclass"/>
+				</Item>
+				<Item Name="Initialize Request Response Queues.vi" Type="VI" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Initialize Request Response Queues.vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 			</Item>
 			<Item Name="nislscsl.dll" Type="Document" URL="nislscsl.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -713,6 +777,38 @@
 				<Item Name="nislscslSession.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/SLSC_Switch/nislscslSession.ctl"/>
 				<Item Name="SLSC Switch.lvlib" Type="Library" URL="/&lt;vilib&gt;/SLSC_Switch/SLSC Switch.lvlib"/>
 			</Item>
+			<Item Name="CDMessaging.lvlibp" Type="LVLibp" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp">
+				<Item Name="Consumer" Type="Folder">
+					<Item Name="Abstract Consumer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Consumer/Abstract Consumer/Abstract Consumer.lvclass"/>
+				</Item>
+				<Item Name="Message" Type="Folder">
+					<Item Name="Abstract Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Message/Abstract Message.lvclass"/>
+					<Item Name="Abstract Request Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Request Message/Abstract Request Message.lvclass"/>
+					<Item Name="Abstract Response Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Response Message/Abstract Response Message.lvclass"/>
+					<Item Name="Shutdown Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Shutdown Message/Shutdown Message.lvclass"/>
+				</Item>
+				<Item Name="Message Queue" Type="Folder">
+					<Item Name="Abstract Message Queue.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message Queue/Abstract Message Queue/Abstract Message Queue.lvclass"/>
+					<Item Name="Message Queue.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message Queue/Message Queue/Message Queue.lvclass"/>
+				</Item>
+				<Item Name="Parameters" Type="Folder">
+					<Item Name="Abstract Init Parameters.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Parameters/Abstract Init Parameters/Abstract Init Parameters.lvclass"/>
+				</Item>
+				<Item Name="Producer" Type="Folder">
+					<Item Name="Abstract Producer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Producer/Abstract Producer/Abstract Producer.lvclass"/>
+				</Item>
+				<Item Name="Switch" Type="Folder">
+					<Item Name="Messages" Type="Folder">
+						<Item Name="Switch Connect Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Connect Message/Switch Connect Message.lvclass"/>
+						<Item Name="Switch Disconnect All Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Disconnect All Message/Switch Disconnect All Message.lvclass"/>
+						<Item Name="Switch Disconnect Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Disconnect Message/Switch Disconnect Message.lvclass"/>
+					</Item>
+					<Item Name="Abstract Switch Consumer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Abstract Switch Consumer/Abstract Switch Consumer.lvclass"/>
+					<Item Name="Abstract Switch Init Parameters.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Abstract Switch Init Parameters/Abstract Switch Init Parameters.lvclass"/>
+				</Item>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Initialize Request Response Queues.vi" Type="VI" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Initialize Request Response Queues.vi"/>
+			</Item>
 			<Item Name="nislscsl.dll" Type="Document" URL="nislscsl.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -850,6 +946,38 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="nislscslSession.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/SLSC_Switch/nislscslSession.ctl"/>
 				<Item Name="SLSC Switch.lvlib" Type="Library" URL="/&lt;vilib&gt;/SLSC_Switch/SLSC Switch.lvlib"/>
+			</Item>
+			<Item Name="CDMessaging.lvlibp" Type="LVLibp" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp">
+				<Item Name="Consumer" Type="Folder">
+					<Item Name="Abstract Consumer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Consumer/Abstract Consumer/Abstract Consumer.lvclass"/>
+				</Item>
+				<Item Name="Message" Type="Folder">
+					<Item Name="Abstract Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Message/Abstract Message.lvclass"/>
+					<Item Name="Abstract Request Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Request Message/Abstract Request Message.lvclass"/>
+					<Item Name="Abstract Response Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Abstract Response Message/Abstract Response Message.lvclass"/>
+					<Item Name="Shutdown Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message/Shutdown Message/Shutdown Message.lvclass"/>
+				</Item>
+				<Item Name="Message Queue" Type="Folder">
+					<Item Name="Abstract Message Queue.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message Queue/Abstract Message Queue/Abstract Message Queue.lvclass"/>
+					<Item Name="Message Queue.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Message Queue/Message Queue/Message Queue.lvclass"/>
+				</Item>
+				<Item Name="Parameters" Type="Folder">
+					<Item Name="Abstract Init Parameters.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Parameters/Abstract Init Parameters/Abstract Init Parameters.lvclass"/>
+				</Item>
+				<Item Name="Producer" Type="Folder">
+					<Item Name="Abstract Producer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Producer/Abstract Producer/Abstract Producer.lvclass"/>
+				</Item>
+				<Item Name="Switch" Type="Folder">
+					<Item Name="Messages" Type="Folder">
+						<Item Name="Switch Connect Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Connect Message/Switch Connect Message.lvclass"/>
+						<Item Name="Switch Disconnect All Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Disconnect All Message/Switch Disconnect All Message.lvclass"/>
+						<Item Name="Switch Disconnect Message.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Switch Disconnect Message/Switch Disconnect Message.lvclass"/>
+					</Item>
+					<Item Name="Abstract Switch Consumer.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Abstract Switch Consumer/Abstract Switch Consumer.lvclass"/>
+					<Item Name="Abstract Switch Init Parameters.lvclass" Type="LVClass" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Switch/Abstract Switch Init Parameters/Abstract Switch Init Parameters.lvclass"/>
+				</Item>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Initialize Request Response Queues.vi" Type="VI" URL="../../../SLSC-Switch-Simulator/Includes/CDMessaging.lvlibp/Initialize Request Response Queues.vi"/>
 			</Item>
 			<Item Name="nislscsl.dll" Type="Document" URL="nislscsl.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
